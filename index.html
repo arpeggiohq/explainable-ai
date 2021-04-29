@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+<!--    <link href="dist/tailwind.css" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">-->
+<!--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>-->
+    <title>Explainable AI Guide</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <a class="navbar-brand" style="font-family: 'Prata', serif;font-size: 1.45rem;" href="https://ar.pegg.io">
+        <img src="Arpeeggio-arrow.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Arpeggio
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Link</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link disabled" href="#">Disabled</a>-->
+<!--            </li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Ecco</a>
+                    <a class="dropdown-item" href="#">Explainable AI Guide</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+
+
+        <h1>Explainable AI Guide</h1>
+
+        <p>
+            Your high-level guide to the set of tools and methods that helps humans understand AI/ML models and their predictions.
+        </p>
+
+
+        <h2>Cheat sheet</h2>
+        <div style="text-align: center">
+            <a href="Explainable-AI-cheat-sheet-v0.2.1080.png">
+                <img style="width: 100%; max-width:600px; border: 1px solid #333" src="Explainable-AI-cheat-sheet-v0.2.1080.png" />
+            </a> <br/>
+
+
+            [<a href="">PDF</a>]
+        </div>
+        <br />
+
+
+        <h2>Video</h2>
+        <p>
+            A brief overview of the Explainable AI cheat sheet with examples.
+        </p>
+
+        <h2>Resources</h2>
+        <p>
+            <a href="https://christophm.github.io/interpretable-ml-book/">Interpretable Machine Learning (IML)</a> - Christoph Molnar <br />
+            <a href="https://www.youtube.com/watch?v=XiaTNOHPpuA">Explainability for NLP</a> - Isabelle Augenstein [video]<br />
+            <a href="https://soundcloud.com/nlp-highlights/117-interpreting-nlp-model-predictions-with-sameer-singh">NLP Highlights: Interpreting NLP Model Predictions</a> - Sameer Singh [audio]<br />
+            <a href="https://www.youtube.com/watch?v=I0yrJz8uc5Q">Please Stop Doing "Explainable" ML</a> - Cynthia Rudin  [video]<br />
+        </p>
+
+        <h4>Interpretable Models</h4>
+        <p>
+            <a href="https://www.youtube.com/watch?v=HVXime0nQeI">StatQuest: K-nearest neighbors, Clearly Explained</a>  [video]<br />
+            <a href="https://christophm.github.io/interpretable-ml-book/simple.html">IML: Chapter 4</a> [online book]
+        </p>
+        <h4>Model agnostic methods</h4>
+        <p>
+            <a href="https://christophm.github.io/interpretable-ml-book/agnostic.html">IML: Chapter 3</a>  [online book]<br />
+            <a href="https://github.com/slundberg/shap">SHAP</a>  [software]
+        </p>
+        <h4>Model specific methods</h4>
+        <p>
+            <a href="https://arxiv.org/abs/1703.01365">Axiomatic Attribution for Deep Networks</a> - Integrated Gradients [paper] <br />
+            <a href="https://www.aclweb.org/anthology/N19-1357/">Attention is not Explanation</a>  [paper]<br />
+            <a href="https://www.aclweb.org/anthology/D19-1002/">Attention is not not Explanation</a>  [paper]<br />
+            <a href="https://arxiv.org/abs/1806.10758">A Benchmark for Interpretability Methods in Deep Neural Networks</a>  [paper]<br />
+            <a href="https://arxiv.org/abs/1810.03292">Sanity Checks for Saliency Maps</a>  [paper]
+        </p>
+        <h4>Example based methods</h4>
+        <p>
+
+            <a href="https://christophm.github.io/interpretable-ml-book/example-based.html">IML: Chapter 6: Example-Based Explanations</a> [online book]
+        </p>
+
+        <h4>Neural representation methods</h4>
+
+        <p>
+            <a href="https://distill.pub/2017/feature-visualization/">Feature Visualization</a> [article] <br />
+            <a href="https://distill.pub/2021/multimodal-neurons/">Multimodal Neurons in Artificial Neural Networks</a> more recent feature visualization work [article] <br />
+            <a href="https://arxiv.org/abs/1706.05806">SVCCA</a> [paper] <br />
+            <a href="https://arxiv.org/abs/1806.05759">PWCCA</a> [paper] <br />
+            <a href="https://arxiv.org/abs/1711.11279">Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)</a> [paper] <br />
+            <a href="https://www.aclweb.org/anthology/P18-1198/">What you can cram into a single $&!#* vector:
+                Probing sentence embeddings for linguistic properties</a> [paper] <br />
+
+        </p>
+
+        <h4>Other methods</h4>
+
+    </div>
+
+</main><!-- /.container -->
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted"> ©2021 Arpeggio </span>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
